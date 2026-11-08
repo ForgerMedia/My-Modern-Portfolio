@@ -531,16 +531,16 @@
         }
 
         // 5. Project Filter Tabs
-       // Autonomous Filtering for Video Editing & Thumbnails (Hides extra sections when filtered)
+// Autonomous Filtering for Video Editing & Thumbnails (Hides extra sections when filtered)
 function filterProjects(category) {
     const cards = document.querySelectorAll('.project-card');
     const btnAll = document.getElementById('btn-all');
     const btnVideo = document.getElementById('btn-video');
     const btnGraphics = document.getElementById('btn-graphics');
     
-    // Target the extra sections on your page to hide/show them autonomously
+    // Target your extra sections by their ID or class wrapper
     const elevateSection = document.getElementById('elevate-section');
-    const reviewsSection = document.getElementById('reviews-section');
+    const reviewsSection = document.getElementById('reviews-section') || document.querySelector('.client-feedback-section');
     const professionalOverview = document.querySelector('.professional-overview-section') || document.querySelector('section:has(h3)');
 
     [btnAll, btnVideo, btnGraphics].forEach(b => {
