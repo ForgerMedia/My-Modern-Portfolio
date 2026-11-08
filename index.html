@@ -173,11 +173,11 @@
         </header>
 
         <!-- PORTFOLIO CATEGORY FILTER TABS -->
-<div class="flex items-center justify-center gap-2 my-1 reveal">
-    <button onclick="filterProjects('all')" id="btn-all" class="px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white shadow-md transition cursor-pointer">All Works</button>
-    <button onclick="filterProjects('video')" id="btn-video" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-blue-500 hover:text-white transition cursor-pointer">Video Editing</button>
-    <button onclick="filterProjects('graphics')" id="btn-graphics" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-blue-500 hover:text-white transition cursor-pointer">Thumbnails</button>
-</div>
+        <div class="flex items-center justify-center gap-2 my-1 reveal">
+            <button onclick="filterProjects('all')" id="btn-all" class="px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white shadow-md transition cursor-pointer">All Works</button>
+            <button onclick="filterProjects('video')" id="btn-video" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-blue-500 hover:text-white transition cursor-pointer">Video Editing</button>
+            <button onclick="filterProjects('graphics')" id="btn-graphics" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-blue-500 hover:text-white transition cursor-pointer">Thumbnails</button>
+        </div>
 
         <!-- PORTFOLIO SHOWCASE SECTION -->
         <section id="projects" class="grid grid-cols-1 lg:grid-cols-2 gap-6 reveal">
@@ -223,7 +223,7 @@
         </section>
 
         <!-- VALUE PROP & DIRECT CONVERSION SECTION -->
-        <section class="glass-card spotlight-card border border-slate-200/80 dark:border-slate-800/80 rounded-3xl p-6 sm:p-8 shadow-sm reveal space-y-6">
+        <section id="professional-overview" class="glass-card spotlight-card border border-slate-200/80 dark:border-slate-800/80 rounded-3xl p-6 sm:p-8 shadow-sm reveal space-y-6">
             
             <div class="max-w-3xl space-y-3">
                 <span class="bg-blue-500/20 text-blue-500 dark:text-blue-300 border border-blue-500/30 text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full inline-block">
@@ -344,48 +344,48 @@
     </div>
 
     <!-- Graphics Modal -->
-<div id="graphicsModal" class="fixed inset-0 bg-black/70 backdrop-blur-md z-50 hidden flex items-center justify-center p-4 transition-all duration-300">
-    <div class="glass-card border border-slate-200 dark:border-slate-800 rounded-3xl max-w-4xl w-full p-6 shadow-2xl relative">
-        <div class="flex items-center justify-between mb-4">
-            <h3 class="text-xl font-bold">🎨 Thumbnail Design Portfolio (Complex Edits)</h3>
-            <button onclick="closeModal('graphicsModal')" class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-500 hover:bg-red-500 hover:text-white transition cursor-pointer"><i class="fa-solid fa-xmark"></i></button>
-        </div>
-        <!-- Scrollable Grid with Working Direct Image Links -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-h-[65vh] overflow-y-auto pr-1">
-            
-            <!-- Sample 1: One Video Can Change Everything -->
-            <div class="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-800 aspect-square group relative">
-                <img src="https://lh3.googleusercontent.com/d/1XIelQPAXsDlIUHKmfSXNAXcFHgTz0Wd9=w1000" alt="One video can change everything" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent p-3 text-white text-xs font-semibold">One Video Can Change Everything</div>
+    <div id="graphicsModal" class="fixed inset-0 bg-black/70 backdrop-blur-md z-50 hidden flex items-center justify-center p-4 transition-all duration-300">
+        <div class="glass-card border border-slate-200 dark:border-slate-800 rounded-3xl max-w-4xl w-full p-6 shadow-2xl relative">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-xl font-bold">🎨 Thumbnail Design Portfolio (Complex Edits)</h3>
+                <button onclick="closeModal('graphicsModal')" class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-500 hover:bg-red-500 hover:text-white transition cursor-pointer"><i class="fa-solid fa-xmark"></i></button>
             </div>
+            <!-- Scrollable Grid with Working Direct Image Links -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-h-[65vh] overflow-y-auto pr-1">
+                
+                <!-- Sample 1: One Video Can Change Everything -->
+                <div class="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-800 aspect-square group relative">
+                    <img src="https://lh3.googleusercontent.com/d/1XIelQPAXsDlIUHKmfSXNAXcFHgTz0Wd9=w1000" alt="One video can change everything" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent p-3 text-white text-xs font-semibold">One Video Can Change Everything</div>
+                </div>
 
-            <!-- Sample 2: Make Your Biz Look Like a Star -->
-            <div class="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-800 aspect-square group relative">
-                <img src="https://lh3.googleusercontent.com/d/1mJqc72tkp-TH2tUF-OcqJaukkVCOsxZV=w1000" alt="Make your biz look like a star" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent p-3 text-white text-xs font-semibold">Make Your Biz Look Like a Star</div>
+                <!-- Sample 2: Make Your Biz Look Like a Star -->
+                <div class="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-800 aspect-square group relative">
+                    <img src="https://lh3.googleusercontent.com/d/1mJqc72tkp-TH2tUF-OcqJaukkVCOsxZV=w1000" alt="Make your biz look like a star" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent p-3 text-white text-xs font-semibold">Make Your Biz Look Like a Star</div>
+                </div>
+
+                <!-- Sample 3: Who Is Glenis Rodgers -->
+                <div class="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-800 aspect-square group relative">
+                    <img src="https://lh3.googleusercontent.com/d/1E6YjAd1-klmzCKW6hnO13bZp1Jm2tI5f=w1000" alt="Who is Glenis Rodgers" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent p-3 text-white text-xs font-semibold">Who Is Glenis Rodgers</div>
+                </div>
+
+                <!-- Sample 4: John Casmon Loom Thumbnail -->
+                <div class="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-800 aspect-square group relative">
+                    <img src="https://lh3.googleusercontent.com/d/1MVqSjehi3uYmRZj0NtYeFEYLSWnYv3zp=w1000" alt="John Casmon Loom" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent p-3 text-white text-xs font-semibold">John Casmon Loom Thumbnail</div>
+                </div>
+
+                <!-- Sample 5: Ortho2 Webinar Marketing Game Plan -->
+                <div class="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-800 aspect-square group relative">
+                    <img src="https://lh3.googleusercontent.com/d/1AjN9HHEHaQY_bPrZTEiodP6AVKJdbimD=w1000" alt="Ortho2 Webinar" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent p-3 text-white text-xs font-semibold">Ortho2 Marketing Game Plan</div>
+                </div>
+
             </div>
-
-            <!-- Sample 3: Who Is Glenis Rodgers -->
-            <div class="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-800 aspect-square group relative">
-                <img src="https://lh3.googleusercontent.com/d/1E6YjAd1-klmzCKW6hnO13bZp1Jm2tI5f=w1000" alt="Who is Glenis Rodgers" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent p-3 text-white text-xs font-semibold">Who Is Glenis Rodgers</div>
-            </div>
-
-            <!-- Sample 4: John Casmon Loom Thumbnail -->
-            <div class="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-800 aspect-square group relative">
-                <img src="https://lh3.googleusercontent.com/d/1MVqSjehi3uYmRZj0NtYeFEYLSWnYv3zp=w1000" alt="John Casmon Loom" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent p-3 text-white text-xs font-semibold">John Casmon Loom Thumbnail</div>
-            </div>
-
-            <!-- Sample 5: Ortho2 Webinar Marketing Game Plan -->
-            <div class="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-800 aspect-square group relative">
-                <img src="https://lh3.googleusercontent.com/d/1AjN9HHEHaQY_bPrZTEiodP6AVKJdbimD=w1000" alt="Ortho2 Webinar" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent p-3 text-white text-xs font-semibold">Ortho2 Marketing Game Plan</div>
-            </div>
-
         </div>
     </div>
-</div>
 
     <!-- HIRE ME INQUIRY MODAL -->
     <div id="inquiryModal" class="fixed inset-0 bg-black/70 backdrop-blur-md z-50 hidden flex items-center justify-center p-4 transition-all duration-300">
@@ -531,48 +531,43 @@
         }
 
         // 5. Project Filter Tabs
-// Autonomous Filtering for Video Editing & Thumbnails (Hides extra sections when filtered)
-function filterProjects(category) {
-    const cards = document.querySelectorAll('.project-card');
-    const btnAll = document.getElementById('btn-all');
-    const btnVideo = document.getElementById('btn-video');
-    const btnGraphics = document.getElementById('btn-graphics');
-    
-    // Target your extra sections by their ID or class wrapper
-    const elevateSection = document.getElementById('elevate-section');
-    const reviewsSection = document.getElementById('reviews-section') || document.querySelector('.client-feedback-section');
-    const professionalOverview = document.querySelector('.professional-overview-section') || document.querySelector('section:has(h3)');
+        function filterProjects(category) {
+            const cards = document.querySelectorAll('.project-card');
+            const btnAll = document.getElementById('btn-all');
+            const btnVideo = document.getElementById('btn-video');
+            const btnGraphics = document.getElementById('btn-graphics');
+            
+            const professionalOverview = document.getElementById('professional-overview');
+            const testimonialsSection = document.getElementById('testimonials');
 
-    [btnAll, btnVideo, btnGraphics].forEach(b => {
-        if(b) b.className = "px-4 py-2 rounded-xl text-xs font-bold bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-blue-500 hover:text-white transition cursor-pointer";
-    });
+            [btnAll, btnVideo, btnGraphics].forEach(b => {
+                if(b) b.className = "px-4 py-2 rounded-xl text-xs font-bold bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-blue-500 hover:text-white transition cursor-pointer";
+            });
 
-    if (category === 'all') {
-        if(btnAll) btnAll.className = "px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white shadow-md transition cursor-pointer";
-        cards.forEach(c => c.style.display = 'flex');
-        if (elevateSection) elevateSection.style.display = 'block';
-        if (reviewsSection) reviewsSection.style.display = 'block';
-        if (professionalOverview) professionalOverview.style.display = 'block';
-    } else if (category === 'video') {
-        if(btnVideo) btnVideo.className = "px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white shadow-md transition cursor-pointer";
-        cards.forEach(c => {
-            if (c.getAttribute('data-category') === 'video') c.style.display = 'flex';
-            else c.style.display = 'none';
-        });
-        if (elevateSection) elevateSection.style.display = 'none';
-        if (reviewsSection) reviewsSection.style.display = 'none';
-        if (professionalOverview) professionalOverview.style.display = 'none';
-    } else if (category === 'graphics') {
-        if(btnGraphics) btnGraphics.className = "px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white shadow-md transition cursor-pointer";
-        cards.forEach(c => {
-            if (c.getAttribute('data-category') === 'graphics') c.style.display = 'flex';
-            else c.style.display = 'none';
-        });
-        if (elevateSection) elevateSection.style.display = 'none';
-        if (reviewsSection) reviewsSection.style.display = 'none';
-        if (professionalOverview) professionalOverview.style.display = 'none';
-    }
-}
+            if (category === 'all') {
+                if(btnAll) btnAll.className = "px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white shadow-md transition cursor-pointer";
+                cards.forEach(c => c.style.display = 'flex');
+                if (professionalOverview) professionalOverview.style.display = 'block';
+                if (testimonialsSection) testimonialsSection.style.display = 'block';
+            } else if (category === 'video') {
+                if(btnVideo) btnVideo.className = "px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white shadow-md transition cursor-pointer";
+                cards.forEach(c => {
+                    if (c.getAttribute('data-category') === 'video') c.style.display = 'flex';
+                    else c.style.display = 'none';
+                });
+                if (professionalOverview) professionalOverview.style.display = 'none';
+                if (testimonialsSection) testimonialsSection.style.display = 'none';
+            } else if (category === 'graphics') {
+                if(btnGraphics) btnGraphics.className = "px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white shadow-md transition cursor-pointer";
+                cards.forEach(c => {
+                    if (c.getAttribute('data-category') === 'graphics') c.style.display = 'flex';
+                    else c.style.display = 'none';
+                });
+                if (professionalOverview) professionalOverview.style.display = 'none';
+                if (testimonialsSection) testimonialsSection.style.display = 'none';
+            }
+        }
+
         // 6. Theme Toggle Functionality
         const themeToggleBtn = document.getElementById('theme-toggle');
         const themeIcon = document.getElementById('theme-icon');
