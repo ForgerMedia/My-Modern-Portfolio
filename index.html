@@ -173,11 +173,11 @@
         </header>
 
         <!-- PORTFOLIO CATEGORY FILTER TABS -->
-        <div class="flex items-center justify-center gap-2 my-1 reveal">
-            <button onclick="filterProjects('all')" id="btn-all" class="px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white shadow-md transition cursor-pointer">All Works</button>
-            <button onclick="filterProjects('video')" id="btn-video" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-blue-500 hover:text-white transition cursor-pointer">🎬 Video Editing</button>
-            <button onclick="filterProjects('graphics')" id="btn-graphics" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-blue-500 hover:text-white transition cursor-pointer">🎨 Graphic Design & Thumbnails</button>
-        </div>
+<div class="flex items-center justify-center gap-2 my-1 reveal">
+    <button onclick="filterProjects('all')" id="btn-all" class="px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white shadow-md transition cursor-pointer">All Works</button>
+    <button onclick="filterProjects('video')" id="btn-video" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-blue-500 hover:text-white transition cursor-pointer">Video Editing</button>
+    <button onclick="filterProjects('graphics')" id="btn-graphics" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-blue-500 hover:text-white transition cursor-pointer">Thumbnails</button>
+</div>
 
         <!-- PORTFOLIO SHOWCASE SECTION -->
         <section id="projects" class="grid grid-cols-1 lg:grid-cols-2 gap-6 reveal">
@@ -506,33 +506,33 @@
 
         // 5. Project Filter Tabs
         function filterProjects(category) {
-            const cards = document.querySelectorAll('.project-card');
-            const btnAll = document.getElementById('btn-all');
-            const btnVideo = document.getElementById('btn-video');
-            const btnGraphics = document.getElementById('btn-graphics');
+    const cards = document.querySelectorAll('.project-card');
+    const valuePropSection = document.getElementById('value-prop-section'); // wrap your value prop section in this ID if desired
+    const btnAll = document.getElementById('btn-all');
+    const btnVideo = document.getElementById('btn-video');
+    const btnGraphics = document.getElementById('btn-graphics');
 
-            [btnAll, btnVideo, btnGraphics].forEach(b => {
-                b.className = "px-4 py-2 rounded-xl text-xs font-bold bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-blue-500 hover:text-white transition cursor-pointer";
-            });
+    [btnAll, btnVideo, btnGraphics].forEach(b => {
+        b.className = "px-4 py-2 rounded-xl text-xs font-bold bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-blue-500 hover:text-white transition cursor-pointer";
+    });
 
-            if (category === 'all') {
-                btnAll.className = "px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white shadow-md transition cursor-pointer";
-                cards.forEach(c => c.style.display = 'flex');
-            } else if (category === 'video') {
-                btnVideo.className = "px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white shadow-md transition cursor-pointer";
-                cards.forEach(c => {
-                    if (c.getAttribute('data-category') === 'video') c.style.display = 'flex';
-                    else c.style.display = 'none';
-                });
-            } else if (category === 'graphics') {
-                btnGraphics.className = "px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white shadow-md transition cursor-pointer";
-                cards.forEach(c => {
-                    if (c.getAttribute('data-category') === 'graphics') c.style.display = 'flex';
-                    else c.style.display = 'none';
-                });
-            }
-        }
-
+    if (category === 'all') {
+        btnAll.className = "px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white shadow-md transition cursor-pointer";
+        cards.forEach(c => c.style.display = 'flex');
+    } else if (category === 'video') {
+        btnVideo.className = "px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white shadow-md transition cursor-pointer";
+        cards.forEach(c => {
+            if (c.getAttribute('data-category') === 'video') c.style.display = 'flex';
+            else c.style.display = 'none';
+        });
+    } else if (category === 'graphics') {
+        btnGraphics.className = "px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white shadow-md transition cursor-pointer";
+        cards.forEach(c => {
+            if (c.getAttribute('data-category') === 'graphics') c.style.display = 'flex';
+            else c.style.display = 'none';
+        });
+    }
+}
         // 6. Theme Toggle Functionality
         const themeToggleBtn = document.getElementById('theme-toggle');
         const themeIcon = document.getElementById('theme-icon');
